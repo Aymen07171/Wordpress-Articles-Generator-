@@ -1,4 +1,4 @@
-import { GeneratedContentResponse } from '../types';
+import type { GeneratedContentResponse } from '../types.ts';
 
 export function normalizeContentResponse(raw: any): GeneratedContentResponse {
   if (!raw || typeof raw !== 'object') {

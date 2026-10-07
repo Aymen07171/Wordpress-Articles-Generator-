@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 app.use(express.json({ limit: '10mb' }));
 
@@ -26,6 +26,11 @@ const ai = new GoogleGenAI({
       'User-Agent': 'aistudio-build',
     },
   },
+});
+
+// Health check endpoints for Cloud Run container probes
+app.get('/health', (_req, res) => {
+  res.status(200).send('OK');
 });
 
 // Endpoint: Check API Key status
@@ -645,10 +650,15 @@ async function startServer() {
     console.error('[RankCraft Server] Unhandled rejection at:', promise, 'reason:', reason);
   });
 
-  if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'dist')));
+  const distPath = path.join(__dirname, 'dist');
+  const distIndexHtml = path.join(distPath, 'index.html');
+  const isProduction = process.env.NODE_ENV === 'production' || fs.existsSync(distIndexHtml);
+
+  if (isProduction && fs.existsSync(distIndexHtml)) {
+    console.log('[RankCraft Server] Serving production build from dist');
+    app.use(express.static(distPath));
     app.get('*', (_req, res) => {
-      res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+      res.sendFile(distIndexHtml);
     });
   } else {
     const { createServer: createViteServer } = await import('vite');
@@ -660,7 +670,7 @@ async function startServer() {
 
     // Fallback for HTML delivery and SPA routing in dev mode
     app.use('*', async (req, res, next) => {
-      if (req.originalUrl.startsWith('/api')) {
+      if (req.originalUrl.startsWith('/api') || req.originalUrl === '/health') {
         return next();
       }
       try {
@@ -689,7 +699,7 @@ async function startServer() {
 
   server.on('error', (err: any) => {
     if (err.code === 'EADDRINUSE') {
-      console.error(`Port ${PORT} is in use, retrying...`);
+      console.error(`[RankCraft Server] Port ${PORT} is already in use.`);
     } else {
       console.error('[RankCraft Server] Server error:', err);
     }
