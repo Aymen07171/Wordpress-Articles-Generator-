@@ -1,0 +1,6 @@
+{
+  "name": "RankCraft – SEO Article & Recipe Studio",
+  "description": "Generate high-ranking SEO articles and structured recipes with automated long-tail keyword optimization, high-CTR media studio, and instant recipe PDF downloads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

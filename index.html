@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function() {
+        try {
+          var origFetch = window.fetch;
+          var curFetch = typeof origFetch === 'function' ? origFetch.bind(window) : origFetch;
+          var desc = {
+            configurable: true,
+            enumerable: true,
+            get: function() {
+              return curFetch;
+            },
+            set: function(val) {
+              curFetch = typeof val === 'function' ? val.bind(window) : val;
+            }
+          };
+          try { Object.defineProperty(window, 'fetch', desc); } catch (e) {}
+          if (typeof Window !== 'undefined' && Window.prototype) {
+            try { Object.defineProperty(Window.prototype, 'fetch', desc); } catch (e) {}
+          }
+          if (typeof globalThis !== 'undefined' && globalThis !== window) {
+            try { Object.defineProperty(globalThis, 'fetch', desc); } catch (e) {}
+          }
+        } catch (e) {}
+
+        function isIgnored(msg, url, stack) {
+          var text = String(msg || '') + ' ' + String(url || '') + ' ' + String(stack || '');
+          return text.indexOf('chrome-extension://') !== -1 ||
+                 text.indexOf('Cannot set property fetch') !== -1 ||
+                 text.indexOf('which has only a getter') !== -1;
+        }
+
+        var prevOnError = window.onerror;
+        window.onerror = function(msg, url, line, col, err) {
+          if (isIgnored(msg, url, err && err.stack)) {
+            return true;
+          }
+          if (typeof prevOnError === 'function') {
+            return prevOnError.apply(this, arguments);
+          }
+          return false;
+        };
+
+        window.addEventListener('error', function(event) {
+          var msg = (event && event.message) || '';
+          var file = (event && event.filename) || '';
+          var stack = (event && event.error && event.error.stack) || '';
+          if (isIgnored(msg, file, stack)) {
+            if (event.preventDefault) event.preventDefault();
+            if (event.stopPropagation) event.stopPropagation();
+            if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function(event) {
+          var reason = event && event.reason;
+          var msg = (reason && reason.message) || String(reason || '');
+          var stack = (reason && reason.stack) || '';
+          if (isIgnored(msg, '', stack)) {
+            if (event.preventDefault) event.preventDefault();
+            if (event.stopPropagation) event.stopPropagation();
+            if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+          }
+        }, true);
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RankCraft – SEO Article & Recipe Studio</title>
+    <meta name="description" content="Generate high-ranking SEO articles and structured recipes with automated long-tail keyword optimization, high-CTR media studio, and instant recipe PDF downloads." />
+    <meta property="og:title" content="RankCraft – SEO Article & Recipe Studio" />
+    <meta property="og:description" content="Generate high-ranking SEO articles and structured recipes with automated long-tail keyword optimization, high-CTR media studio, and instant recipe PDF downloads." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RankCraft" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RankCraft – SEO Article & Recipe Studio" />
+    <meta name="twitter:description" content="Generate high-ranking SEO articles and structured recipes with automated long-tail keyword optimization, high-CTR media studio, and instant recipe PDF downloads." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

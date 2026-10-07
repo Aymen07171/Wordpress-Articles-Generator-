@@ -1,0 +1,357 @@
+import { GeneratedContentResponse } from '../types';
+
+export const sampleRecipeData: GeneratedContentResponse = {
+  metaTitle: 'Creamy Tuscan Garlic Chicken (Easy 30-Minute Skillet Recipe)',
+  metaDescription: 'Make this restaurant-quality creamy Tuscan garlic chicken in just 30 minutes! Tender chicken cutlets bathed in sun-dried tomato garlic parmesan cream sauce.',
+  urlSlug: 'creamy-tuscan-garlic-chicken-recipe',
+  h1Title: 'Creamy Tuscan Garlic Chicken in Sun-Dried Tomato Parmesan Sauce',
+  primaryKeyword: 'creamy tuscan garlic chicken',
+  longTailKeywords: [
+    'easy 30 minute skillet chicken dinner',
+    'creamy sun dried tomato chicken sauce',
+    'low carb keto tuscan chicken',
+    'restaurant style garlic parmesan chicken breast',
+  ],
+  searchIntent: 'Informational & Commercial (High-Intent How-To Recipe)',
+  seoScore: 96,
+  seoStrengths: [
+    'Primary keyword placed in the first 30 characters of Title and H1',
+    'Meta description includes exact keyword match plus high-CTR click trigger ("30 minutes")',
+    'Semantic long-tail keyword placement across H2 subheadings and recipe card',
+    'Schema.org Recipe JSON-LD embedded for Google Rich Results star snippets',
+    'High readability score with scannable bullet points and timer callouts',
+  ],
+  seoRecommendations: [
+    'Add an internal link to a side-dish pairing guide (e.g. cauliflower mash or rustic garlic baguette)',
+    'Embed an original 15-second recipe teaser video above the recipe card for Dwell Time boost',
+  ],
+  longTailPlacementAudit: [
+    {
+      keyword: 'easy 30 minute skillet chicken dinner',
+      occurrences: 3,
+      sectionPlaced: 'Meta Description, H2 Heading, Introduction',
+      intentCoverage: 'Speed & Convenience Intent (Rank #1 target)',
+    },
+    {
+      keyword: 'creamy sun dried tomato chicken sauce',
+      occurrences: 4,
+      sectionPlaced: 'Sauce Breakdown H2, Chef Tips, Ingredient Card',
+      intentCoverage: 'Flavor & Technique Intent',
+    },
+    {
+      keyword: 'low carb keto tuscan chicken',
+      occurrences: 2,
+      sectionPlaced: 'Dietary Adaptations, FAQ section',
+      intentCoverage: 'Dietary Lifestyle Intent',
+    },
+    {
+      keyword: 'restaurant style garlic parmesan chicken breast',
+      occurrences: 3,
+      sectionPlaced: 'H1 Subtitle, Sear Technique H3, Conclusion',
+      intentCoverage: 'Gourmet Quality Intent',
+    },
+  ],
+  estimatedReadTimeMinutes: 5,
+  suggestedMedia: {
+    thumbnailPrompt: 'Vibrant sizzling skillet with golden seared chicken cutlets simmering in velvety cream sauce with red sun-dried tomatoes and fresh baby spinach, rustic wooden table, cinematic soft golden hour lighting, 4k food photography',
+    thumbnailHeadlineOverlay: '30-MIN TUSCAN CHICKEN!',
+    thumbnailBadge: 'RESTAURANT QUALITY',
+    inContentImagePrompts: [
+      {
+        title: 'Golden Sear Perfection',
+        prompt: 'Thinly sliced chicken breast cutlets searing in olive oil in cast iron skillet, golden crispy edges, culinary close-up shot',
+        altText: 'Searing golden brown chicken cutlets in a skillet for creamy Tuscan garlic chicken',
+        caption: 'Step 1: Golden seared cutlets lock in natural juices before making the velvety sauce.',
+      },
+      {
+        title: 'Velvety Sun-Dried Tomato Reduction',
+        prompt: 'Minced garlic, chicken bone broth, heavy cream, and vibrant sun-dried tomato strips simmering into a rich creamy sauce, steam rising',
+        altText: 'Simmering garlic parmesan cream sauce with chopped sun-dried tomatoes and baby spinach',
+        caption: 'Step 2: Simmering fresh garlic and sun-dried tomatoes forms the aromatic foundation.',
+      },
+    ],
+  },
+  articleContent: {
+    introduction: 'If you are looking for an **easy 30 minute skillet chicken dinner** that tastes like it came straight from an upscale Italian trattoria, this **creamy tuscan garlic chicken** is your new culinary holy grail. Pan-seared golden chicken cutlets are simmered in an irresistible garlic-parmesan cream sauce punctuated by sweet, tangy sun-dried tomatoes and vibrant wilted spinach. Whether you are following a **low carb keto tuscan chicken** lifestyle or serving it over al dente fettuccine, this one-pan dinner guarantees empty plates every single time.',
+    sections: [
+      {
+        heading: 'Why This Skillet Recipe Outranks the Competition',
+        level: 'h2',
+        content: 'Most weeknight chicken recipes suffer from two major flaws: dry, rubbery chicken breasts and watery, split cream sauces. By butterflying our chicken breasts into cutlets and utilizing freshly grated Parmigiano-Reggiano alongside room-temperature heavy cream, this method achieves emulsified perfection without heavy flour slurries or artificial thickeners.',
+        calloutTip: 'Golden Rule: Always bring your heavy whipping cream to room temperature 15 minutes before adding to hot stock to prevent dairy shock and sauce separation.',
+      },
+      {
+        heading: 'Mastering the Golden Sear: Restaurant Style Garlic Parmesan Chicken Breast',
+        level: 'h2',
+        content: 'The secret to restaurant-quality flavor begins with the fond—the caramelized brown bits stuck to the bottom of your skillet after searing the poultry. Pat the chicken completely dry with paper towels, season generously with kosher salt, Italian herbs, and cracked black pepper, and sear over medium-high heat without moving the meat for 4 full minutes.',
+      },
+      {
+        heading: 'Crafting the Velvety Creamy Sun Dried Tomato Chicken Sauce',
+        level: 'h2',
+        content: 'Once the chicken is set aside, lower the heat to deglaze the pan with dry white wine or chicken bone broth. Scrape up every bit of fond. Sauté finely minced garlic for just 45 seconds until fragrant, then introduce oil-packed sun-dried tomatoes and room-temperature heavy cream. Simmer gently until the sauce coats the back of a wooden spoon.',
+        calloutTip: 'Time-Saver: Use sun-dried tomatoes packed in olive oil with herbs—the seasoned oil in the jar makes an incredible searing base for the chicken!',
+      },
+      {
+        heading: 'Serving Suggestions & Low-Carb Keto Pairing Ideas',
+        level: 'h2',
+        content: 'This versatile dish pairs effortlessly with traditional sides or low-carb alternatives. For a strict keto meal with under 4g net carbs per serving, spoon the luxurious sauce over buttered zucchini noodles, roasted spaghetti squash, or creamy cauliflower mash. For classic comfort, serve with crusty garlic bread and buttered pappardelle.',
+      },
+    ],
+    conclusion: 'This **creamy tuscan garlic chicken** brings gourmet restaurant indulgence to busy weeknights in just 30 minutes. Bookmark this recipe, pin it for meal prep, and download your printable recipe card below to keep in your kitchen binder.',
+    faqs: [
+      {
+        question: 'Can I substitute half-and-half for heavy cream?',
+        answer: 'You can, but half-and-half contains more water and less milk fat, making the sauce thinner and more prone to curdling if boiled. To substitute safely, whisk 1 teaspoon of cornstarch or arrowroot into the half-and-half before heating.',
+      },
+      {
+        question: 'What is the best cut of chicken to use?',
+        answer: 'Boneless, skinless chicken breasts sliced horizontally into thin cutlets cook rapidly and evenly in under 7 minutes. Boneless chicken thighs also work wonderfully and offer extra richness.',
+      },
+      {
+        question: 'How do I reheat leftovers without the cream separating?',
+        answer: 'Reheat gently in a small skillet over low heat with a splash of chicken broth or cream, stirring constantly until warmed through.',
+      },
+    ],
+  },
+  recipeData: {
+    recipeTitle: 'Creamy Tuscan Garlic Chicken Skillet',
+    summary: 'Pan-seared tender chicken cutlets nestled in a silky garlic parmesan cream sauce with sun-dried tomatoes and fresh baby spinach. A 30-minute, 1-pan gourmet classic.',
+    cuisine: 'Italian-American Gourmet',
+    category: 'Dinner / Main Course',
+    prepTimeMinutes: 10,
+    cookTimeMinutes: 20,
+    totalTimeMinutes: 30,
+    servings: 4,
+    difficulty: 'Easy',
+    caloriesPerServing: 485,
+    dietaryTags: ['Keto-Friendly', 'Gluten-Free', 'Low-Carb', '30-Minute Meal', 'High-Protein'],
+    equipment: ['12-inch Cast Iron or Stainless Steel Skillet', 'Tongs', 'Meat Mallet or Rolling Pin', 'Chef Knife'],
+    ingredients: [
+      { item: 'Boneless skinless chicken breasts (cut into 4 thin cutlets)', amount: '1.5', unit: 'lbs', category: 'Poultry', notes: 'Patted dry' },
+      { item: 'Olive oil (or oil from sun-dried tomato jar)', amount: '2', unit: 'tbsp', category: 'Pantry' },
+      { item: 'Garlic cloves (finely minced)', amount: '5', unit: 'cloves', category: 'Aromatics' },
+      { item: 'Sun-dried tomatoes in oil (drained and julienned)', amount: '0.5', unit: 'cup', category: 'Pantry' },
+      { item: 'Heavy whipping cream (room temperature)', amount: '1', unit: 'cup', category: 'Dairy' },
+      { item: 'Low-sodium chicken bone broth', amount: '0.5', unit: 'cup', category: 'Liquid' },
+      { item: 'Freshly grated Parmigiano-Reggiano cheese', amount: '0.75', unit: 'cup', category: 'Dairy', notes: 'Grated fresh, not pre-shredded' },
+      { item: 'Fresh baby spinach (stems removed)', amount: '3', unit: 'cups', category: 'Produce' },
+      { item: 'Italian seasoning', amount: '1', unit: 'tsp', category: 'Seasoning' },
+      { item: 'Kosher salt and freshly cracked black pepper', amount: '1', unit: 'tsp', category: 'Seasoning', notes: 'To taste' },
+      { item: 'Fresh basil ribbons', amount: '2', unit: 'tbsp', category: 'Garnish' },
+    ],
+    instructions: [
+      {
+        stepNumber: 1,
+        title: 'Prep & Butterfly Chicken',
+        text: 'Slice chicken breasts horizontally into cutlets of even 1/2-inch thickness. Season both sides generously with kosher salt, cracked black pepper, and Italian seasoning.',
+        timerMinutes: 3,
+        chefTip: 'Even thickness ensures all pieces cook through at the exact same rate without drying out.',
+      },
+      {
+        stepNumber: 2,
+        title: 'Golden Sear in Hot Skillet',
+        text: 'Heat 2 tablespoons of oil in a 12-inch skillet over medium-high heat. Once hot, sear chicken cutlets undisturbed for 4-5 minutes per side until deep golden brown and reaching 165°F internal temperature. Transfer to a warm plate.',
+        timerMinutes: 9,
+        tempNote: 'Skillet at medium-high heat (~375°F)',
+        chefTip: 'Do not crowd the skillet; cook in two batches if needed to maintain high heat.',
+      },
+      {
+        stepNumber: 3,
+        title: 'Sauté Aromatics & Deglaze',
+        text: 'Reduce heat to medium. Add minced garlic and sun-dried tomatoes to the pan. Sauté for 45-60 seconds until fragrant. Pour in chicken bone broth to deglaze, scraping up the browned caramelized bits from the bottom.',
+        timerMinutes: 2,
+        chefTip: 'The browned pan fond contains 80% of the authentic Italian flavor.',
+      },
+      {
+        stepNumber: 4,
+        title: 'Build the Velvety Cream Sauce',
+        text: 'Pour in room-temperature heavy cream and bring to a gentle simmer. Reduce heat to low and gradually whisk in grated Parmigiano-Reggiano cheese until smooth and melted. Simmer 2-3 minutes until sauce lightly thickens.',
+        timerMinutes: 3,
+        chefTip: 'Avoid rapid boiling after adding cheese to prevent clumping.',
+      },
+      {
+        stepNumber: 5,
+        title: 'Fold in Spinach & Finish',
+        text: 'Add fresh baby spinach and stir gently for 1-2 minutes until wilted. Return chicken and any resting juices back to the skillet, spooning sauce over each cutlet. Garnish with fresh basil ribbons and serve immediately.',
+        timerMinutes: 3,
+      },
+    ],
+    chefTips: [
+      'Grate your own parmesan from a block: pre-shredded bagged cheese contains potato starch or cellulose that prevents a smooth melt.',
+      'If your sauce is too thick, whisk in 2 tablespoons of warm chicken broth to reach silkiness.',
+      'Sun-dried tomato oil is liquid gold—use it to coat the pan instead of regular cooking oil.',
+    ],
+    nutrition: {
+      calories: '485 kcal',
+      protein: '42 g',
+      carbs: '5 g',
+      fat: '33 g',
+      fiber: '2 g',
+      sodium: '520 mg',
+    },
+    storageAndReheating: 'Store in an airtight glass container in the refrigerator for up to 4 days. Reheat on low heat in a skillet with 1-2 tablespoons of chicken broth or cream to prevent the emulsion from breaking.',
+    variations: [
+      'Tuscan Salmon / Shrimp: Swap chicken cutlets for 1.25 lbs wild salmon fillets or jumbo shrimp (sear shrimp for only 2 mins per side).',
+      'Dairy-Free Alternative: Substitute full-fat canned coconut milk and 3 tablespoons nutritional yeast for heavy cream and parmesan.',
+    ],
+    schemaJsonLd: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Recipe',
+      name: 'Creamy Tuscan Garlic Chicken Skillet',
+      image: [
+        'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1200&q=80',
+      ],
+      author: {
+        '@type': 'Person',
+        name: 'Chef Culinary Editor',
+      },
+      datePublished: '2026-10-05',
+      description: 'Make this restaurant-quality creamy Tuscan garlic chicken in just 30 minutes! Tender chicken cutlets bathed in sun-dried tomato garlic parmesan cream sauce.',
+      prepTime: 'PT10M',
+      cookTime: 'PT20M',
+      totalTime: 'PT30M',
+      keywords: 'creamy tuscan garlic chicken, 30 minute skillet chicken dinner, keto chicken, garlic parmesan chicken',
+      recipeYield: '4 servings',
+      recipeCategory: 'Main Course',
+      recipeCuisine: 'Italian-American',
+      nutrition: {
+        '@type': 'NutritionInformation',
+        calories: '485 calories',
+        proteinContent: '42 grams',
+        carbohydrateContent: '5 grams',
+        fatContent: '33 grams',
+      },
+      recipeIngredient: [
+        '1.5 lbs Boneless skinless chicken breasts',
+        '2 tbsp Olive oil',
+        '5 cloves Garlic finely minced',
+        '0.5 cup Sun-dried tomatoes',
+        '1 cup Heavy whipping cream',
+        '0.5 cup Chicken bone broth',
+        '0.75 cup Parmigiano-Reggiano cheese',
+        '3 cups Fresh baby spinach',
+      ],
+      recipeInstructions: [
+        {
+          '@type': 'HowToStep',
+          text: 'Slice chicken breasts into cutlets and season generously.',
+        },
+        {
+          '@type': 'HowToStep',
+          text: 'Sear chicken for 4-5 minutes per side until golden brown.',
+        },
+        {
+          '@type': 'HowToStep',
+          text: 'Sauté garlic and sun-dried tomatoes, deglaze with broth, and simmer with cream and parmesan.',
+        },
+        {
+          '@type': 'HowToStep',
+          text: 'Fold in baby spinach and return chicken to skillet to coat in sauce.',
+        },
+      ],
+    }, null, 2),
+  },
+};
+
+export const sampleArticleData: GeneratedContentResponse = {
+  metaTitle: 'Sourdough Bread Hydration Guide: Master Open Crumb & Proofing',
+  metaDescription: 'Learn how to master sourdough bread hydration percentages from 65% to 85%. Unlock open airy crumb structure, optimal fermentation, and blistering crust.',
+  urlSlug: 'sourdough-bread-hydration-guide-open-crumb',
+  h1Title: 'The Definitive Sourdough Hydration Guide: Unlocking an Open, Airy Crumb',
+  primaryKeyword: 'sourdough bread hydration guide',
+  longTailKeywords: [
+    'high hydration sourdough crumb structure',
+    'bakers percentages sourdough water ratio',
+    'how to handle sticky high hydration dough',
+    'sourdough bulk fermentation temperature tips',
+  ],
+  searchIntent: 'Informational & Technical Guide (Deep Search Intent)',
+  seoScore: 97,
+  seoStrengths: [
+    'Keyword in front-loaded H1 and URL slug',
+    'High search volume baker percentage long-tail terms naturally embedded',
+    'Rich structured tables and step-by-step fermentation mechanics',
+    'Complete FAQ schema for Google SERP expandable snippet ranking',
+  ],
+  seoRecommendations: [
+    'Add an interactive hydration baker percentage calculator widget',
+    'Link to a sourdough starter maintenance and feeding schedule guide',
+  ],
+  longTailPlacementAudit: [
+    {
+      keyword: 'high hydration sourdough crumb structure',
+      occurrences: 4,
+      sectionPlaced: 'H2 Subheading, Crumb Analysis Section, Conclusion',
+      intentCoverage: 'Technical Baking Technique',
+    },
+    {
+      keyword: 'bakers percentages sourdough water ratio',
+      occurrences: 3,
+      sectionPlaced: 'Formula Breakdown, Intro, Callout Box',
+      intentCoverage: 'Mathematical Measurement Intent',
+    },
+    {
+      keyword: 'how to handle sticky high hydration dough',
+      occurrences: 3,
+      sectionPlaced: 'Technique H2, Coil Fold Steps',
+      intentCoverage: 'Problem-Solving / Pain Point Intent',
+    },
+    {
+      keyword: 'sourdough bulk fermentation temperature tips',
+      occurrences: 2,
+      sectionPlaced: 'Proofing Mechanics Section, FAQ',
+      intentCoverage: 'Fermentation Troubleshooting Intent',
+    },
+  ],
+  estimatedReadTimeMinutes: 7,
+  suggestedMedia: {
+    thumbnailPrompt: 'Artisan sourdough boule sliced in half revealing translucent open honeycomb crumb and blistered ear, dusting of flour on dark slate background, warm dramatic side lighting, macro photography',
+    thumbnailHeadlineOverlay: 'CRACK THE SOURDOUGH CODE!',
+    thumbnailBadge: 'BAKER GUIDE',
+    inContentImagePrompts: [
+      {
+        title: 'Open Honeycomb Crumb Cross-Section',
+        prompt: 'Macro cross section of sourdough bread crumb showing gelatinized wild yeast air pockets, natural artisan loaf, high detail',
+        altText: 'Cross section of high hydration sourdough loaf showing open airy honeycomb crumb structure',
+        caption: 'Proper gluten network development creates thin cell walls and an open, custardy crumb.',
+      },
+    ],
+  },
+  articleContent: {
+    introduction: 'In the realm of artisan bread making, few concepts inspire as much fascination—and occasional frustration—as hydration. Whether you are baking your first country loaf or chasing that elusive translucent, honeycomb interior, this **sourdough bread hydration guide** breaks down the exact mechanics of water, protein absorption, and gluten development. By mastering **bakers percentages sourdough water ratio**, you gain complete creative control over oven spring, crust blistering, and crumb texture.',
+    sections: [
+      {
+        heading: 'What Is Bakers Percentage Hydration?',
+        level: 'h2',
+        content: 'In professional artisan baking, all ingredients are measured as a percentage relative to total flour weight (which represents 100%). If your recipe calls for 1000g of flour and 750g of water, your dough is at 75% hydration. Every 5% increase fundamentally transforms how the dough behaves, how quickly enzymes degrade starch, and how gently you must shape the loaf.',
+        calloutTip: 'Baker Rule: Higher hydration speeds up fermentation rate because enzymes and wild yeast move more freely through liquid medium.',
+      },
+      {
+        heading: 'How to Handle Sticky High Hydration Dough Without Adding Extra Flour',
+        level: 'h2',
+        content: 'The most common beginner mistake is dusting excessive bench flour onto the work surface when dough feels wet. This alters your baker ratio and creates unmixed dense seams in your final loaf. Instead, keep a small bowl of cold water nearby. Wetting your hands allows you to execute coil folds, slap-and-fold techniques, and bench resting cleanly with zero sticking.',
+      },
+      {
+        heading: 'Hydration Spectrum: Choosing the Right Water Ratio',
+        level: 'h2',
+        content: '• 65% - 70% (Beginner Friendly): Stiff, easy to shape, crisp sturdy crust, tight sandwich crumb.\n• 72% - 76% (The Sweet Spot): Optimal balance of open crumb, high oven spring, and manageable gluten tension.\n• 78% - 85%+ (Advanced Open Crumb): Custardy interior, wild irregular alveoli, requires high-protein flour (>13% protein) and gentle coil folding.',
+      },
+      {
+        heading: 'Sourdough Bulk Fermentation Temperature Tips',
+        level: 'h2',
+        content: 'Hydration and dough temperature are intimately connected. At 78°F (25°C), an 80% hydration dough can complete bulk fermentation in as little as 3.5 to 4 hours. Watch for a domed surface, rounded edges in your container, visible air bubbles under the skin, and a 40-50% rise rather than waiting for double volume.',
+      },
+    ],
+    conclusion: 'Mastering high hydration is a journey of tactile intuition rather than rigid timers. Start at 72% hydration to understand your flour strength, then gradually step up by 2-3% as your shaping confidence grows.',
+    faqs: [
+      {
+        question: 'Does whole wheat flour require more water?',
+        answer: 'Yes. Whole wheat contains bran and germ which absorb substantially more water than white flour. Add 3% to 5% more water whenever incorporating 20%+ whole grains.',
+      },
+      {
+        question: 'Why does my high hydration dough flatten out into a pancake?',
+        answer: 'This is usually caused by over-fermentation (which destroys gluten integrity) or insufficient surface tension during final pre-shaping and shaping.',
+      },
+    ],
+  },
+};
